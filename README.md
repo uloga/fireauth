@@ -20,7 +20,7 @@ More about how to use Firebase - Github oAUth
 -----
 To get started with GitHub authentication, you need to first create a new GitHub application. 
 Click the Register new application button at the top right of that page and fill in a name, description,
-and website for your application. Set the Authorization callback URL to https://auth.firebase.com/v2/<YOUR-FIREBASE-APP>/auth/github/callback 
+and website for your application. Set the Authorization callback URL to ``` https://auth.firebase.com/v2/<YOUR-FIREBASE-APP>/auth/github/callback ```
 so that GitHub's OAuth service can properly communicate with Firebase's authentication server.
 
 About
