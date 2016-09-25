@@ -23,4 +23,7 @@ Click the Register new application button at the top right of that page and fill
 and website for your application. Set the Authorization callback URL to https://auth.firebase.com/v2/<YOUR-FIREBASE-APP>/auth/github/callback 
 so that GitHub's OAuth service can properly communicate with Firebase's authentication server.
 
-If you like this example, please star and watch feel free to fork.
+About
+----
+I've created this example while testing angular.js with firebase. Soon I'm planing to create more advanced and useful applications using angular.js with firebase. If you like this example, please star, share, fork and watch.
+If you have any questions, feel free to drop me a line at: wpnemesis@gmail.com 
