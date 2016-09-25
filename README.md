@@ -1,4 +1,4 @@
-## Firebase - Angular.js Authentication System
+## Firebase - Angular.js Authentication Example
 
 Check out the [FireAuth](https://uloga.github.io/fireauth/#/login) example.
 
