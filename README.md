@@ -5,8 +5,9 @@ You can find example at: [FireAuth](https://uloga.github.io/fireauth/#/login)
 Usage
 -----
 Go to [Firebase](https://www.firebase.com/) and create a database, they also have free option plans, like the one I'm using for this example.
+
 You can find out more about how to use firebase by reading [Firebase Docs](https://www.firebase.com/docs/).
-Aftere you've created your firebase databas you can download this repo and test it locally. 
+Aftere you've created your firebase database, you can download this repo and test it locally. 
 
 Go into repos folder and in ``` app.js ``` set your own ``` var firebaseUrl = "" ```.
 Next: create your own github app at: [New Github App](https://github.com/settings/applications/new)
