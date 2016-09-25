@@ -9,14 +9,12 @@
    * @github: https://github.com/uloga
    */
   
- 
-  angular
+ angular
     .module('fireAuth', ['firebase'])
     .config(fireAuthConfig)
     .service('$fireAuth', fireAuth)
     .factory('Flash', Flash)
     .run(fireAuthRun);
-  
   
   /*
    * fireAuth Configuration
@@ -91,7 +89,6 @@
     vm.restricted = Restricted;
     vm.allowed    = Allowed;
     
-    
     // Allowed Paths
     function Allowed(path){
       return firePath.allowed.indexOf(path) > -1;
@@ -125,7 +122,6 @@
       });
       
     }
-    
     
     // FireBase $authWithPassword
     function loginUser(data){
