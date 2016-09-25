@@ -1,6 +1,6 @@
 ## Firebase - Angular.js Authentication System
 
-You can find example at: [FireAuth](https://uloga.github.io/fireauth/#/login) 
+Check out the [FireAuth](https://uloga.github.io/fireauth/#/login) example.
 
 Usage
 -----
