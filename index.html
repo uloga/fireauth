@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title>FireAuth Angular.js / Firebase - Angular.js Authentication Example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ===== CSS START ==== -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+<link href="https://decorator.io/modulr/webroot/css/modulr.min.css" rel="stylesheet">
+<link href="https://decorator.io/modulr/webroot/css/animation.css" rel="stylesheet">
+<link href="assets/css/theme.css" rel="stylesheet">
+<!-- ===== CSS END ==== -->
+<!-- ANGULAR START -->   
+<script src="../angular/angular.min.js"></script>
+<script src="../angular/angular-route.min.js"></script>
+<!-- ANGULAR END -->
+<!-- FIREBASE START -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+<!-- FIREBASE END -->
+<!-- App Start -->
+<script src="app.js"></script>
+<!-- App End -->
+<!-- FireAuth Start -->
+<script src="modules/fireauth/fireauth.js"></script>
+<script src="modules/fireauth/service/auth.js"></script>
+<script src="modules/fireauth/controller/auth.js"></script>
+<!-- FireAuth End -->
+</head>
+<body>
+  <div class="flash padding-20 text-white {{flashType}}" ng-show="flashMsg">{{flashMsg}}</div>
+  
+  <!-- Ng View Start -->
+  <div ng-view></div>
+  <!-- Ng View End -->
+  
+  <!-- you can remove the fork me on github button below -->
+  <a href="https://github.com/uloga/fireauth" 
+     title="firebase angular.js authentication example"
+     class="btn green forkme"
+     >
+    <i class="fa fa-github fa-lg"></i> Fork Me On Gitub
+  </a>
+</body>
+</html>

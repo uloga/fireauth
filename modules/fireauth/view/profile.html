@@ -1,0 +1,16 @@
+<!-- 
+Simple profile, just to show some Data ...
+-->
+
+<div class="wrapper748 center padding-40">
+  <div class="row heading">
+  <h5 class="pull-left text-capitalize">Hi, {{userData.username}}</h5>
+  <span class="btn blue pull-right" ng-click="Auth.logout()">Logout</span>
+  </div>
+  <ul class="padding-20 -padding-left">
+    <li ng-repeat="(k, v) in userData" class="margin-bottom">
+      <strong class="text-capitalize">{{k}}: </strong>
+      <span class="margin-left">{{v | date : format : timezone}}</span>
+    </li>
+  </ul>
+</div>

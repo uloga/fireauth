@@ -1,0 +1,58 @@
+.login{
+  background: #fff;
+  margin: 12% auto;
+}
+.register{
+  margin: 5% auto;
+}
+.register{
+  width: 560px;
+}
+.login .border-right{
+  border-right: 1px solid #ddd;
+}
+.padder{
+  padding: 70px 40px;
+}
+.marger{
+  margin-bottom: 20px;
+}
+.flash{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100001;
+}
+.forkme{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+.heading{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.heading h5{
+  line-height: 1.5;
+}
+ul li{
+  color: #555;
+}
+@media (max-width: 800px){
+  .-tablet-border-right{
+    border-right: 0px !important;
+  }
+  .register{
+    width: 100%;
+  }
+  .padder{
+    padding: 20px 10px;
+  }
+  .flash{
+    left: 10px;
+  }
+  .forkme{
+    position: absolute;
+    right: 10px;
+  }
+}

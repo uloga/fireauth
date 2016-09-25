@@ -1,0 +1,78 @@
+<div class="login padding-40 wrapper960 tablet-padding">
+  {{userData}}
+  
+  <!-- Left Column Start -->
+  <div class="col-6 text-center border-right padder -tablet-border-right">
+    <h4 class="padding-bottom-20">Connect with Github for easy access</h4>
+    <a ng-click="Auth.github()" class="btn l blue full-width marger rounded-2">
+      <i class="fa fa-lg fa-github"></i> Login With Github
+    </a>
+  </div>
+  <!-- Left Column End -->
+  
+  <!-- Right Column Start -->
+  <div class="col-6 padding-40 padding-top-10 text-center tablet-padding">
+    
+    <h4 class="padding-bottom-20">Sign in</h4>
+    
+    <!-- Login Form Start -->
+    <form class="form l blue" name="login" ng-submit="Auth.login()" novalidate>
+      
+      <!-- Email Start -->
+      <div class="group">
+        <input 
+          type="email" 
+          name="email"
+          placeholder="Email"
+          ng-model="Auth.email"
+          ng-required="true"
+        />
+        
+        <span class="pull-left text-red padding-top-5" 
+          ng-show="
+            login.email.$invalid && login.$submitted ||
+            login.email.$invalid && login.email.$touched ">
+          
+          <i class="fa fa-exclamation-triangle"></i> A valid email is required
+        </span>
+        
+      </div>
+      <!-- Email End -->
+      
+      <!-- Password Start -->
+      <div class="group">
+        <input 
+          type="password" 
+          name="password"
+          placeholder="Password"
+          ng-model="Auth.password"
+          ng-required="true"
+        />
+        
+        <span class="pull-left text-red padding-top-5" 
+          ng-show="
+            login.password.$invalid && login.$submitted ||
+            login.password.$invalid && login.password.$touched ">
+          <i class="fa fa-exclamation-triangle"></i> Password is required
+        </span>
+        
+      </div>
+      <!-- Password End -->
+      
+      <!-- Login Button Start -->
+      <div class="group -margin-bottom">
+        <button class="btn blue full-width rounded-2">Login</button>
+      </div> 
+      <!-- Login Button End -->
+      
+    </form>
+    <!-- Login Form End -->
+    
+  </div>
+  <!-- Right Column End -->
+  
+  <div class="col-12 padding-20 text-center">
+    <h6>Not a member? <a ng-href="#/register" class="hover-text-underline">Create An Account</a></h6>
+  </div>
+  
+</div>

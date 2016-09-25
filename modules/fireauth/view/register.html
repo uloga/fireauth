@@ -1,0 +1,86 @@
+<div class="register wrapper748 padding-40 tablet-padding">
+  
+  <h4 class="text-center padding-bottom-20">Create An Account</h4>
+  
+  <div class="row">
+    
+    <!-- Register Form Start -->
+    <form class="form l blue" name="register" ng-submit="Auth.register()" novalidate>
+      
+      <!-- Username Start -->
+      <div class="group">
+        <input 
+          type="text" 
+          name="username"
+          placeholder="Username"
+          ng-model="Auth.username"
+          ng-required="true"
+        />
+        <span class="pull-left text-red padding-top-5" 
+          ng-show="
+            register.username.$invalid && register.$submitted ||
+            register.username.$invalid && register.username.$touched
+        ">
+          <i class="fa fa-exclamation-triangle"></i> Username is required
+        </span>
+      </div>
+      <!-- Username End -->
+      
+      <!-- Email Start -->
+      <div class="group">
+        <input 
+          type="email" 
+          name="email"
+          placeholder="Email"
+          ng-model="Auth.email"
+          ng-required="true"
+        />
+        <span class="pull-left text-red padding-top-5" 
+          ng-show="
+            register.email.$invalid && register.$submitted ||
+            register.email.$invalid && register.email.$touched
+        ">
+          <i class="fa fa-exclamation-triangle"></i> A valid email is required
+        </span>
+      </div>
+      <!-- Email End -->
+      
+      <!-- Password Start -->
+      <div class="group">
+        <input 
+          type="password" 
+          name="password"
+          placeholder="Password"
+          ng-model="Auth.password"
+          ng-required="true"
+        />
+        
+        <span class="pull-left text-red padding-top-5" 
+          ng-show="
+            register.password.$invalid && register.$submitted ||
+            register.password.$invalid && register.password.$touched ">
+          <i class="fa fa-exclamation-triangle"></i> Password is required
+        </span>
+        
+      </div>
+      <!-- Password End -->
+      
+      
+      <!-- Submit Button Start -->
+      <div class="group">
+        <button class="btn blue full-width rounded-2">Create Account</button>
+      </div>
+      <!-- Submit Button End -->
+      
+    </form>
+    <!-- Register Form End -->
+    
+  </div>
+  
+  <div class="row text-center padding-20">
+    <h6>
+      Already have an account? <a ng-href="#/login" class="hover-text-underline">Login</a>
+    </h6>
+  </div>
+  
+</div>
