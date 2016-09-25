@@ -13,8 +13,8 @@ Next: go into fireauth folder and in ``` app.js ``` set your own ``` var firebas
 Next: create your own github app at: [New Github App](https://github.com/settings/applications/new)
 If you're using it locally, make sure that your Homepage URL is set to ``` http://localhost/fireauth/ ```
 
-I'm using github social login in this example but you can also use many other social logins with firebase,
-if you wanna know more about how to use and set these up visit: [Firebase Docs](https://www.firebase.com/docs/web/guide/user-auth.html)
+I'm using github social login in this example but you can also use many other social logins with firebase.
+If you wanna know more about how to use and set these up visit: [Firebase Docs](https://www.firebase.com/docs/web/guide/user-auth.html)
 
 More about how to use Firebase - Github oAUth
 -----
