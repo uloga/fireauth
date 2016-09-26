@@ -25,5 +25,5 @@ so that GitHub's OAuth service can properly communicate with Firebase's authenti
 
 About
 ----
-I've created this example while testing angular.js with firebase. Soon I'm planing to create more advanced and useful applications using angular.js with firebase. If you like this example, please star, share, fork and watch.
+I've created this example while testing angular.js with firebase. Soon I'm planing to create more advanced and useful applications using angular.js with firebase. If you like this example, please star and share.
 If you have any questions, feel free to drop me a line at: wpnemesis@gmail.com 
